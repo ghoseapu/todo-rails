@@ -1,0 +1,9 @@
+<div class="card" style="width: 28rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= @task.task_name %></h5>
+    <p class="card-text"><%= @task.task_completed ? "Done" : "Yet to be done" %></p>
+    <%= link_to 'Edit', edit_task_path(@task), class: 'btn btn-secondary' %>
+    <%= link_to 'Back', tasks_path, class: 'btn btn-dark' %>
+  </div>
+</div>
+
